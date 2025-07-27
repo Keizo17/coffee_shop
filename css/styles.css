@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fdf6f0;
+    color: #333333;
+}
+
+header{
+    padding: 20px 10px;
+    margin: 10px;
+    
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer{
+    padding: 10px 0px;
+    text-align: center;
+}
+
+h1{
+    padding-bottom: 5px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    border-bottom: 3px solid #6b4f3b;
+}
+
+.section-title h2 {
+    padding: 0px 0px 2px 10px;
+    margin: 0;
+}
+
+nav{
+    background-color: #6b4f3b;
+    width: fit-content;
+    padding: 8px 0px;
+    margin: 0 auto;
+    height: auto;
+}
+
+nav a{
+    color: #fdf6f0;
+    padding: 8px 12px;
+    border: 5px;
+    margin: 0 10px;
+    border-radius: 4px;
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #fdf6f0;
+    background-color: #4b3527;
+}
+
+a {
+    color: #6b4f3b;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #8b5e3c;
+}
+
+.main-image{
+    padding: 0;
+    border: 5px solid #4b3527;
+    border-radius: 4px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 0.3fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.menu-section {
+    background-color: #fdf6f0;
+    border: 2px solid #4b3527;
+    padding: 15px;
+    margin: 20px 0;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.menu-section h2{
+    color: #6b4f3b;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #6b4f3b;
+    padding-bottom: 5px;
+}
+
+.menu-section ul{
+    list-style: none;
+    padding-left: 0;
+    font-size: large;
+}
+
+.menu-section li{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.item-name{
+    font-weight: 500;
+}
+
+.item-price{
+    font-weight: 600;
+    color: #6b4f3b;
+}
+
+.my-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1.5rem;
+    padding: 2rem;
+    margin: 0 auto;
+    width: fit-content;
+
+    border: 1px solid #8b5e3c;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.my-form label{
+    color: #333333;
+}
+
+.my-form button{
+    color: #333333;
+    background-color: #f9f9f9;
+    
+    border-radius: 5px;
+}
+
+.my-form button:hover{
+    background-color: #ccc;
+}
+
+.my-form button:active{
+    background-color: #3e8e41;
+    transform: scale(0.98); /*adds a slight press-down effect*/
+}
+
+.other-info{
+    color: #333333;
+    text-align: center;
+}
+
+.center-msg{
+    text-align: center;
+    font-size: larger;
+    padding: 10px 0;
+}
