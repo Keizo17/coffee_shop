@@ -6,7 +6,6 @@
         <meta name="keywords" content="web design practice">
 
         <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <link rel="script" type="js" href="js/main.js">
 
         <title>Cozy Brew Menu</title>
     </head>
@@ -29,63 +28,492 @@
             <section class="menu-section" id="coffee-espresso-drinks">
                 <h2>Coffee & Espresso Drinks</h2>
                 <ul>
-                    <li><span class="item-name">Espresso</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Americano</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Latte</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Cappuccino</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Flat White</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Mocha</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Macchiato</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Cold Brew</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Nitro Cold Brew</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Iced Coffee</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Iced Latte</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Affogato</span><span class="item-price">$</span></li>
+                    <li>
+                        <span class="item-name">Espresso</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="espresso">
+                        <select class="quantity" name="dropdown" id="espresso">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Americano</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="americano">
+                        <select class="quantity" name="dropdown" id="americano">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Latte</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="latte">
+                        <select class="quantity" name="dropdown" id="latte">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Cappuccino</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="cappuccino">
+                        <select class="quantity" name="dropdown" id="cappuccino">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Flat White</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="flat-white">
+                        <select class="quantity" name="dropdown" id="flat-white">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Mocha</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="mocha">
+                        <select class="quantity" name="dropdown" id="mocha">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Macchiato</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="macchiato">
+                        <select class="quantity" name="dropdown" id="macchiato">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Cold Brew</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="cold-brew">
+                        <select class="quantity" name="dropdown" id="cold-brew">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Nitro Cold Brew</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="nitro-cold-brew">
+                        <select class="quantity" name="dropdown" id="nitro-cold-brew">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Iced Coffee</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="iced-coffee">
+                        <select class="quantity" name="dropdown" id="iced-coffee">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Iced Latte</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="iced-latte">
+                        <select class="quantity" name="dropdown" id="iced-latte">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Affogato</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="affogato">
+                        <select class="quantity" name="dropdown" id="affogato">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
                 </ul>
             </section>
 
             <section class="menu-section" id="non-coffee-drinks">
                 <h2>Non-Coffee Drinks</h2>
                 <ul>
-                    <li><span class="item-name">Chai Latte</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Hot Chocolate</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Matcha Latte</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Herbal Tea</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Black Tea</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Green Tea</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">London Fog</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Iced Tea</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Lemonade</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Fruit Smoothies</span><span class="item-price">$</span></li>
+                    <li>
+                        <span class="item-name">Chai Latte</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="chai-latte">
+                        <select class="quantity" name="dropdown" id="chai-latte">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Hot Chocolate</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="hot-chocolate">
+                        <select class="quantity" name="dropdown" id="hot-chocolate">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Matcha Latte</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="matcha-latte">
+                        <select class="quantity" name="dropdown" id="matcha-latte">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Herbal Tea</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="herbal-tea">
+                        <select class="quantity" name="dropdown" id="herbal-tea">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Black Tea</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="black-tea">
+                        <select class="quantity" name="dropdown" id="black-tea">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Green Tea</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="green-tea">
+                        <select class="quantity" name="dropdown" id="green-tea">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">London Fog</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="london-fog">
+                        <select class="quantity" name="dropdown" id="london-fog">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Iced Tea</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="iced-tea">
+                        <select class="quantity" name="dropdown" id="iced-tea">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Lemonade</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="lemonade">
+                        <select class="quantity" name="dropdown" id="lemonade">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Fruit Smoothies</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="fruit-smoothies">
+                        <select class="quantity" name="dropdown" id="fruit-smoothies">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
                 </ul>
             </section>
 
             <section class="menu-section" id="pastries-baked-goods">
                 <h2>Pastries & Baked Goods</h2>
                 <ul>
-                    <li><span class="item-name">Croissants</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Muffins</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Scones</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Cinnamon Rolls</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Bagels</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Doughnuts</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Cookies</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Biscotti</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Coffee Cake</span><span class="item-price">$</span></li>
+                    <li>
+                        <span class="item-name">Croissants</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="croissants">
+                        <select class="quantity" name="dropdown" id="croissants">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Muffins</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="muffins">
+                        <select class="quantity" name="dropdown" id="muffins">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Scones</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="scones">
+                        <select class="quantity" name="dropdown" id="scones">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Cinnamon Rolls</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="cinnamon-rolls">
+                        <select class="quantity" name="dropdown" id="cinnamon-rolls">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Bagels</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="bagels">
+                        <select class="quantity" name="dropdown" id="bagels">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Doughnuts</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="doughnuts">
+                        <select class="quantity" name="dropdown" id="doughnuts">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Cookies</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="cookies">
+                        <select class="quantity" name="dropdown" id="cookies">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Biscotti</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="biscotti">
+                        <select class="quantity" name="dropdown" id="biscotti">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Coffee Cake</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="coffee-cake">
+                        <select class="quantity" name="dropdown" id="coffee-cake">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
                 </ul>
             </section>
 
             <section class="menu-section" id="light-meals-snacks">
                 <h2>Light Meals / Snacks</h2>
                 <ul>
-                    <li><span class="item-name">Sandwiches</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Paninis</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Avocado Toast</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Breakfast Burritos</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Quiches</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Yogurt Parfaits</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Oatmeal or Overnight Oats</span><span class="item-price">$</span></li>
-                    <li><span class="item-name">Fruit Cups</span><span class="item-price">$</span></li>
+                    <li>
+                        <span class="item-name">Sandwiches</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="sandwiches">
+                        <select class="quantity" name="dropdown" id="sandwiches">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Paninis</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="paninis">
+                        <select class="quantity" name="dropdown" id="paninis">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Avocado Toast</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="avocado-toast">
+                        <select class="quantity" name="dropdown" id="avocado-toast">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Breakfast Burritos</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="breakfast-burritos">
+                        <select class="quantity" name="dropdown" id="breakfast-burritos">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Quiches</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="quiches">
+                        <select class="quantity" name="dropdown" id="quiches">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Yogurt Parfaits</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="yogurt-parfaits">
+                        <select class="quantity" name="dropdown" id="yogurt-parfaits">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Oatmeal or Overnight Oats</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="oatmeal-overnight-oats">
+                        <select class="quantity" name="dropdown" id="oatmeal-overnight-oats">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="item-name">Fruit Cups</span>
+                        <span class="item-price">$</span>
+                        <input type="checkbox" class="menu-item" value="fruit-cups">
+                        <select class="quantity" name="dropdown" id="fruit-cups">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
                 </ul>
             </section>
         </div>
@@ -93,5 +521,6 @@
         <footer>
             <p>&copy; 2025 Cozy Brew. All rights reserved.</p>
         </footer>
+        <script src="js/main.js"></script>
     </body>
 </html>
